@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+%\usepackage[cm]{fullpage}
+\usepackage{geometry}
+\geometry{
+    tmargin=0.9cm,
+    lmargin=1.5cm,
+    rmargin=1.5cm,
+    bmargin=0.9cm
+}
+\usepackage{fancyhdr}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\lhead{248 Walton Road, Woking,\\Surrey, GU21 5EQ, UK}
+\rhead{Phone: +44 7746 242105\\\href{mailto:sebastien.sduc@gmail.com}{sebastien.sduc@gmail.com}}
+\cfoot{}
+
+\newcommand\Bot{\rule[-1.2ex]{0pt}{0pt}} % Bottom strut
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\huge SEBASTIEN \textsc{DUC}}\par} % Your name
+
+%\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Date of Birth:} & 15 February 1990 \\
+\textsc{Address:} & 248 Walton Road, Woking,\\ 
+                  & Surrey, GU21 5EQ, UK \\
+\end{tabular}
+\quad\quad\quad\quad\quad
+\begin{tabular}{rl}
+\textsc{Phone:} & +44 7746 242105\\
+\textsc{Email:} & \href{mailto:sebastien.sduc@gmail.com}{sebastien.sduc@gmail.com}\\
+\textsc{Citizenship:} & French, Swiss
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+    \textsc{July 2014 - Now} & Engineer at \textsc{Qualcomm (UK) Ltd.}, Farnborough, UK\\ 
+                              & \footnotesize{
+                                - Working in the Security (UK) team.} \\
+                              & \footnotesize{
+                                - Delivering two security applications and
+                                porting them on the newest Chipsets.}\\
+                              & \footnotesize{
+                                - Developing Trusted Applications for ARM
+                                TrustZone in C/C++ and the Android system /
+                                Linux kernel components
+                                communicating with those Applications.} \\
+                              & \footnotesize{
+                                - Collaborating with
+                                multiple teams working internationally on
+                                different components of the System on Chip.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Mar 2013 - Sept 2013} & Intern at \textsc{Qualcomm Inc.}, San Diego, CA, USA\\ 
+                              & \footnotesize{
+                                - Worked in the Product Security Team.} \\ 
+                              & \footnotesize{
+                                - Performed Security risk assessments, secure
+                            design and code reviews of Qualcomm's products.}\\
+                              & \footnotesize{
+                                - Contacted the developer teams and
+                            requested multiple security fixes.} \\
+                              & \footnotesize{
+                                - Developed a Trusted Application for ARM TrustZone in C.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{July 2012 - Sept 2012} & Summer Intern at \textsc{Samsung Electronics}, Suwon, South Korea \emph{}\\
+                               & \footnotesize{
+                                 - Worked in the security team in the Visual
+                             display division (TVs). } \\
+                               & \footnotesize{
+                                 - Developed APIs in C++
+                                 related to X.509 Certificates and OpenSSL.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{June 2010 - July 2012} & System Administrator at \textsc{Nouvjur} Law Firm, Lausanne, Switzerland \emph{}\\
+& \footnotesize{Part time employee responsible of network and system
+administration. Installation and maintenance of the system.}
+%------------------------------------------------
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{Sept 2011 - Oct 2013} & Master of Science in \textsc{Communication Systems}, \textbf{EPFL}\\
+                              & Major: Information Security\\
+                              &\normalsize \textsc{Average Grade}: 5.71/6.0
+    (GPA: 3.80) \Bot\\
+%&\\
+
+%------------------------------------------------
+
+\textsc{Sept 2008 - July 2011} & Bachelor of Science in \textsc{Communication Systems}, \textbf{EPFL} \\
+                               &\normalsize \textsc{Average Grade}: 5.42/6.0
+    (GPA: 3.64) --- second best results \Bot\\
+%&\\
+
+%------------------------------------------------
+
+%\textsc{Aug 2005 - July 2008} & High School, \textbf{Gymnase de Chamblandes}\\
+%                             %& Maturit\'{e} in Biology and Chemistry\\
+%                             & Award for excellency in advanced mathematics and
+%                               in physics\\
+%&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%   ACADEMIC PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Academic Projects}
+
+\begin{tabular}{rl}
+    \textsc{Mar 2013 - Sept 2013} & Master Thesis at Qualcomm Inc. --- Securing Data at Rest \\
+                                  & \footnotesize{Security risk assessment of a
+Qualcomm solution to secure data at rest on its System on Chip.} \\
+                                  & \footnotesize{Supervisors: Prof. Serge Vaudenay and
+Dr. Ning Shang}\Bot\\
+    
+    %\textsc{Sept 2012 - Jan 2013} &  
+
+    \textsc{Jan 2012 - July 2012} & Short, Undeniable Signatures for Android 2.x\\
+                                  & \footnotesize{Android application as a proof
+                                      of concept for a new cryptographic signature
+                                      scheme.} \\
+                                  & \footnotesize{Supervised by Dr. Ioana Boureanu}\Bot\\
+
+    \textsc{Sept 2009 - Jan 2010} & Data Mining in Lausanne Data Collection Campaign\\
+                                  & \footnotesize{Machine learning on data collected on
+                                      smartphones to predict user behavior.}\\
+                                  & \footnotesize{Supervised by Prof. R\"{u}diger Urbanke, in
+                                      collaboration with Nokia}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{English:} & Fluent\\
+
+\textsc{French:} & Native Language\\
+
+\textsc{German:} & Intermediate\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\begin{tabular}{rl}
+Programming : & \textsc{C}, C++, \textsc{Python},
+    Java, Bash, SQL, ARM Assembly\\
+
+Operating Systems: & \textsc{GNU/Linux}, Microsoft Windows, Android\\
+
+    General: & TCP/IP networking, Cryptography, Software security, ARM architecture, JTAG debugging\\
+
+Other: & {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin
+SmallCaps]{Fontin-Regular}, Git, SVN, Perforce, Vim\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+Martial Arts (Judo), Travelling, music (guitar), dance, surf
+
+\end{document}
